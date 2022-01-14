@@ -35,22 +35,42 @@ body > div > div > div {
   height: 200px;
 }
 
-body > div > div:first-child > div {
+#denzel > .pic {
   background-image: url(Denzel_And_Wife.png);
   background-size: 250%;
   background-position-x: -85px;
   background-position-y: -20px;
 }
 
-body > div > div:last-child > div {
+.pic {
+  position: relative;
+}
+.pic span {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#suzie > div {
   background-image: url(Suzie.png);
   background-size: cover;
 }
 
-body > div > div:nth-child(2) > div {
+#jb > div {
   background-image: url(JB.png);
   background-position-x: -200px;
   background-position-y: -20px;
+}
+
+p {
+  padding: 1rem;
+}
+
+p span {
+  background-color: maroon;
+  color: gold;
+  font-size: smaller;
 }
 
 </style>
@@ -58,25 +78,31 @@ body > div > div:nth-child(2) > div {
   <body>
     <h1>Mount Vernon Hall of Fame</h1>
     <div>
-      <div>
+      <div id='denzel'>
         <h2>Denzel</h2>
-        <div>photo here</div>
+        <div class='pic'><span>Denzel Washington</span></div>
         <p>
-        Bio Here
+        Denzel Hayes Washington Jr. was born in <span>Mount Vernon</span>, New York, on December 28, 1954. His mother, Lennis "Lynne", was a beauty parlor owner and operator born in Georgia and partly raised in Harlem, New York.[6][7][8][9] His father, Denzel Hayes Washington Sr., a native of Buckingham County, Virginia, was an ordained Pentecostal minister, who was also an employee of the New York City Water Department, and worked at a local S. Klein department store.
         </p>
       </div>
-      <div>
+      <div id='jb'>
         <h2>JB</h2>
-        <div>photo here</div>
+        <div class='pic'><span>JB Smoove</span></div>
         <p>
-        Bio Here
+        Smoove was born in Plymouth, North Carolina, to parents Floyd and Elizabeth Brooks.[4] From the time he was three years old, he grew up in <span>Mount Vernon</span>, New York.[2][5][6] He spent a significant amount of time with his extended maternal family in the Plymouth area, which he has said inspired much of his comedy. In Mount Vernon, he grew up in the Levister Towers housing projects with his two younger brothers. Smoove's father died from diabetes when Smoove was 15 years old.[4]
+
+In 1983, Smoove graduated from Mount Vernon High School.[7] He attended Norfolk State University in Virginia, studying engineering and graphic design.[3]
+
+Smoove worked as a perfume formulator and sold fire extinguishers door-to-door.[8]
+        
         </p>
       </div>
-      <div>
+      <div id='suzie'>
         <h2>Suzie</h2>
-        <div>photo here</div>
+        <div class='pic'><span>Susie Essman</span></div>
         <p>
-        Bio Here
+        Essman was born in The Bronx, New York City, and was raised in the suburb of <span>Mount Vernon</span>. Her father, Leonard Essman, was an internist and clinical oncologist. Her mother, Zora (née Pressman), taught Russian at Sarah Lawrence College. She is the great granddaughter of silent film actor and Russian opera impresario Leo Feodoroff.[1] Essman is Jewish; her grandparents emigrated from Russia and Poland.[2][3] She received her bachelor's degree from SUNY Purchase College.[citation needed]
+        
         </p>
       </div>
     </div>
