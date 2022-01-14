@@ -9,12 +9,18 @@ body {
   font-family: verdana;
   margin: 0;
 }
-h1 {
+h1,h2 {
   background-color: maroon;
   color: gold;
   text-align: center;
   border: solid 3px gold;
+}
+h1 {
   padding: 0.5rem;
+}
+
+h2 {
+  margin: 0;
 }
 
 body > div > div {
@@ -24,13 +30,29 @@ body > div > div {
   border: solid 1px maroon;
 }
 
-h2 {
-  margin: 0;
-  background-color: maroon;
-  color: gold;
-  text-align: center;
-  border: solid 3px gold;
+body > div > div > div {
+  background-color: dodgerBlue;
+  height: 200px;
 }
+
+body > div > div:first-child > div {
+  background-image: url(Denzel_And_Wife.png);
+  background-size: 250%;
+  background-position-x: -85px;
+  background-position-y: -20px;
+}
+
+body > div > div:last-child > div {
+  background-image: url(Suzie.png);
+  background-size: cover;
+}
+
+body > div > div:nth-child(2) > div {
+  background-image: url(JB.png);
+  background-position-x: -200px;
+  background-position-y: -20px;
+}
+
 </style>
   </head>
   <body>
